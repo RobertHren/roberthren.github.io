@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html ng-app="ionicApp">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+  <title>Ionic Tabs and Navigation</title>
+
+  <link href="http://code.ionicframework.com/nightly/css/ionic.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <script src="http://code.ionicframework.com/nightly/js/ionic.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</head>
+ 
+<body>
+
+
+<div class="tabs-striped tabs-top tabs-background-positive tabs-light">
+
+    
+
+<! ---header end -->
+
+  <ion-nav-bar class="nav-title-slide-ios7 bar-assertive" >
+    </ion-nav-back-button><div class="button-bar">
+  <a href="#/tab/info" class="button icon ion-ios7-information-outline"></a>
+  <a href="#/tab/review" class="button icon ion-chatbox-working"></a>
+  <a href="#/tab/share" class="button icon ion-paper-airplane"></a>
+</div>
+  </ion-nav-bar>
+
+  <ion-nav-view animation="slide-left-right"></ion-nav-view>
+
+
+  </div>
+
+< !---bottom tab start --->
+
+  <script id="tabs.html" type="text/ng-template">
+    <ion-tabs class="tabs-icon-top tabs-assertive ">
+
+      <ion-tab  title="Jelovnik"  icon="ion-pizza" href="#/tab/home">
+        <ion-nav-view  name="home-tab"></ion-nav-view>
+      </ion-tab>
+
+
+      <ion-tab title="Naurèi Dostavu" icon="ion-ios7-telephone" href="#/tab/about">
+        <ion-nav-view name="about-tab"></ion-nav-view>
+      </ion-tab>
+    </ion-tabs>
+  </script>
+
+< !---bottom tab end --->
+< !---info start --->
+
+  <script id="info.html" type="text/ng-template">
+    <ion-view class="padding">
+      <ion-content>
+        <div class="list list-inset">
+    <div class="item">
+      <h2>Radno Vrijeme</h2>
+      <p>Subta nedjelja</p>
+    </div>
+    <div class="item">
+      <h2>Radno Vrijeme</h2>
+      <p>Subta nedjelja</p>
+    </div>   
+        </div>
+      </ion-content>
+    </ion-view>
+  </script>
+
+< !---info end --->
+< !---review start --->
+
+  <script id="review.html" type="text/ng-template">
+    <ion-view>
+       <ion-content item-icon-left class="padding">
+
+<a class="item ">
+    <h2>U Pizzeriji Margarita cijenimo Vaše mišljenje.</h2>
+      <h4> 
+Molimo odvojite trenutak i podijelite Vaše iskustvo.</h4>
+  </a>
+        <div class="list card">
+
+  <a class="item item-icon-left item-icon-right" href="#/tab/review-happy">
+    <i class="icon ion-happy"></i>
+      <h2>Pohvala</h2>
+      <p>Imam pohvalu za uslugu</p>
+    <i class="icon ion-ios7-arrow-right"></i>
+  </a>
+
+<a class="item item-icon-left item-icon-right" href="#/tab/review-sad">
+    <i class="icon ion-sad"></i>
+    <h2>Kritika</h2>
+      <p>Imam loše iskustvo</p>
+    <i class="icon ion-ios7-arrow-right"></i>
+  </a>
+
+       </div>
+      </ion-content>
+    </ion-view>
+  </script>
+
+< !---review end --->
+< !---review happy start --->
+
+<script id="review-happy.html" type="text/ng-template">
+    <ion-view>
+       <ion-content item-icon-left class="padding">
+
+<a class="item item-icon-left" href="#">
+    <i class="icon ion-happy"></i>
+    <h2>Super!</h2>
+      <h4>We'd love it for you to share 
+your experiance with the world on of these 
+popular websites. Just make selection below to get started.</h4>
+  </a>
+        <div class="list card">
+
+<a target="_blank" class="item item-icon-left item-icon-right" href="http://google.com">
+    <i class="icon ion-social-google"></i>
+    <h4>Podijelite iskustvo na Google Places</h4>
+    <i class="icon ion-arrow-right-c"></i>
+  </a>
+
+<a target="_blank" class="item item-icon-left item-icon-right" href="http://facebook.com">
+    <i class="icon ion-social-facebook"></i>
+    <h4>Možda je Facebook-u više tvoj stil</h4>
+    <i class="icon ion-arrow-right-c"></i>
+  </a>
+
+<a target="_blank" class="item item-icon-left item-icon-right" href="http://facebook.com">
+    <i class="icon ion-social-linkedin"></i>
+    <h4>Podijelite iskustvo na LinkedIn-u</h4>
+    <i class="icon ion-arrow-right-c"></i>
+  </a>
+
+<a target="_blank" class="item item-icon-left item-icon-right" href="http://twitter.com">
+    <i class="icon ion-social-twitter"></i>
+    <h4>Podijelite iskustvo na Twitter-u</h4>
+    <i class="icon ion-arrow-right-c"></i>
+  </a>
+
+
+       </div>
+      </ion-content>
+    </ion-view>
+  </script>
+
+< !---review happy end --->
+< !---review sad start --->
+
+  <script id="review-sad.html" type="text/ng-template">
+    <ion-view>
+       <ion-content item-icon-left class="padding">
+
+<a class="item item-icon-left" href="#">
+    <i class="icon ion-sad"></i>
+    <h2>Oh ne!</h2>
+      <h4>We'd appreciate it if you'd share your
+exeperiance with us so we can improve in the future. Just click below to get started.</h4>
+  </a>
+        <div class="list card">
+
+  <a target="_blank" class="item item-icon-left" href="mailo:robert.skrlec@gmail.com">
+    <i class="icon ion-android-mail"></i>
+    Kažite nam u èemu je problem.
+  </a>
+
+       </div>
+      </ion-content>
+    </ion-view>
+  </script>
+
+
+< !---review sad end --->
+< !---review share start --->
+
+<script id="share.html" type="text/ng-template">
+    <ion-view>
+       <ion-content item-icon-left class="padding">
+
+<a class="item item-icon-left" href="#">
+    <i class="icon ion-android-friends"></i>
+    <h2>Svidja Vam se ova aplikacija?</h2>
+      <h4>Pozovite prijatelje da ju instaliraju.</h4>
+  </a>
+        <div class="list card">
+
+
+<a target="_blank" class="item item-icon-left item-icon-right" href="http://facebook.com">
+    <i class="icon ion-social-facebook"></i>
+    <h4>Pozovite prijatelje na Facebook-u</h4>
+    <i class="icon ion-arrow-right-c"></i>
+  </a>
+
+<a target="_blank" class="item item-icon-left item-icon-right" href="http://facebook.com">
+    <i class="icon ion-social-linkedin"></i>
+    <h4>Pozovite prijatelje na LinkedIn-u</h4>
+    <i class="icon ion-arrow-right-c"></i>
+  </a>
+
+<a target="_blank" class="item item-icon-left item-icon-right" href="http://twitter.com">
+    <i class="icon ion-social-twitter"></i>
+    <h4>Pozovite prijatelje na Twitter-u</h4>
+    <i class="icon ion-arrow-right-c"></i>
+  </a>
+
+<a target="_blank" class="item item-icon-left item-icon-right" href="http://twitter.com">
+    <i class="icon ion-android-mail"></i>
+    <h4>Pozovite prijatelje putem E-maila</h4>
+    <i class="icon ion-arrow-right-c"></i>
+  </a>
+
+       </div>
+      </ion-content>
+    </ion-view>
+  </script>
+  
+       </div>
+      </ion-content>
+    </ion-view>
+  </script>
+
+< !---share end --->
+< !---call button start --->
+
+  <script id="about.html" type="text/ng-template">
+    <ion-view title="About">
+      <ion-content class="padding">
+        <h3>Create hybrid mobile apps with the web technologies you love.</h3>
+        <p>Free and open source, Ionic offers a library of mobile-optimized HTML, CSS and JS components for building highly interactive apps.</p>
+        <p>Built with Sass and optimized for AngularJS.</p>
+        <p>
+          <a class="button icon icon-right ion-chevron-right" href="#/tab/navstack">Tabs Nav Stack</a>
+        </p>
+      </ion-content>
+    </ion-view>
+  </script>
+
+< !---call button end --->
+< !---menu start --->
+
+  <script id="home.html" type="text/ng-template">
+    <ion-view title="Jelovnik">
+      <ion-content>
+        
+<div class="list">
+
+    <div class="item">
+      <h2><strong>Vesuvio</strong></h2>
+      <h4><strong>(rajcica, sir, sunka)</strong></h4>
+      <h4>Mala:38kn, Velika:48kn, Jumbo:86kn</h4>
+    </div>
+
+    <div class="item">
+      <h2><strong>Fungi</strong></h2>
+      <h4><strong>(rajcica, sir, sampinjoni)</strong></h4>
+      <h4>Mala:38kn, Velika:48kn, Jumbo:86kn</h4>
+    </div>
+
+    <div class="item">
+      <h2><strong>Capricosa</strong></h2>
+      <h4><strong>(rajcica, sir, sunka, sampinjoni)</strong></h4>
+      <h4>Mala:38kn, Velika:48kn, Jumbo:86kn</h4>
+    </div>
+
+
+    
+</div>
+        </p>
+      </ion-content>
+    </ion-view>
+  </script>
+
+< !---menu end --->
+
+  
+
+</body>
+</html>
