@@ -5,11 +5,11 @@
   <meta charset="windows-1250" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-  <title>Ionic Tabs and Navigation</title>
+  <title>Pizza App</title>
 
   <link href="http://code.ionicframework.com/nightly/css/ionic.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
-
+  <script type="text/javascript" src="cordova.js"></script>
   <script src="http://code.ionicframework.com/nightly/js/ionic.bundle.min.js"></script>
   <script src="script.js"></script>
 
@@ -30,6 +30,9 @@
   <ion-nav-view animation="slide-left-right"></ion-nav-view>
 
 
+
+      
+
   </div>
 
 < !---bottom tab start --->
@@ -37,14 +40,14 @@
   <script id="tabs.html" type="text/ng-template">
     <ion-tabs class="tabs-icon-top tabs-assertive">
 
-      <ion-tab  title="Jelovnik"  icon="ion-pizza" href="#/tab/home">
+<ion-tab  title="Jelovnik"  icon="ion-pizza" href="#/tab/jelovnik">
         <ion-nav-view  name="home-tab"></ion-nav-view>
       </ion-tab>
 
-
-      <ion-tab title="Naruči Dostavu" icon="ion-ios7-telephone" href="#/tab/about">
-        <ion-nav-view name="about-tab"></ion-nav-view>
+<ion-tab title="Naruči Dostavu" icon="ion-ios7-telephone" href="#/tab/jelovnik">
+        <ion-nav-view name="home-tab"></ion-nav-view>
       </ion-tab>
+
     </ion-tabs>
   </script>
 
@@ -143,7 +146,7 @@ popular websites. Just make selection below to get started.</h4>
   </a>
         <div class="list card">
 
-<a target="_blank" class="item item-icon-left item-icon-right" href="http://google.com">
+<a href="#" onclick="var ref = window.open('http://google.com', '_blank', 'location=yes,toolbar=yes');" class="item item-icon-left item-icon-right">
     <i class="icon ion-social-google"></i>
     <h4>Podijelite iskustvo na Google Places</h4>
     <i class="icon ion-arrow-right-c"></i>
@@ -188,7 +191,7 @@ exeperiance with us so we can improve in the future. Just click below to get sta
   </a>
         <div class="list card">
 
-  <a target="_blank" class="item item-icon-left" href="mailo:robert.skrlec@gmail.com">
+  <a target="_blank" class="item item-icon-left" href="mailto:robert.skrlec@gmail.com">
     <i class="icon ion-android-mail"></i>
     <h3>Recite nam u čemu je problem.</h3>
   </a>
@@ -260,9 +263,23 @@ exeperiance with us so we can improve in the future. Just click below to get sta
   </script>
 
 < !---call button end --->
-< !---menu start --->
+< !---home start --->
 
   <script id="home.html" type="text/ng-template">
+    <ion-view title="About">
+      <ion-content class="padding">
+        <h3>Ovo je demo verzija aplikacije.</h3>
+        <p>U konačnoj verziji, kada kupac klikne na "Naruči dostavu", Vama će zazvoniti telefon.</p>
+        </br>
+
+      </ion-content>
+    </ion-view>
+  </script>
+
+< !---home end --->
+< !---menu start --->
+
+  <script id="jelovnik.html" type="text/ng-template">
     <ion-view title="Jelovnik">
       <ion-content>
         

@@ -12,8 +12,8 @@ angular.module('ionicApp', ['ionic'])
       url: "/home",
       views: {
         'home-tab': {
-          templateUrl: "home.html",
-          controller: 'HomeTabCtrl'
+          templateUrl: "home.html"
+          
         }
       }
     })
@@ -22,6 +22,14 @@ angular.module('ionicApp', ['ionic'])
       views: {
         'home-tab': {
           templateUrl: "info.html"
+        }
+      }
+    })
+    .state('tabs.jelovnik', {
+      url: "/jelovnik",
+      views: {
+        'home-tab': {
+          templateUrl: "jelovnik.html"
         }
       }
     })
@@ -79,6 +87,4 @@ angular.module('ionicApp', ['ionic'])
 
 })
 
-.controller('HomeTabCtrl', function ($scope) {
-  console.log('HomeTabCtrl');
-});
+
