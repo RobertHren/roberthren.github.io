@@ -87,37 +87,3 @@ angular.module('ionicApp', ['ionic'])
 
 })
 
-function handleSocialShare()
-{
-    $('#select-choice-share option:selected').each(function()
-    {
-        text = "Flash vs HTML5 Trendanalyse";
-        url ="http://www.sebastianviereck.de/flash-html5-trendanalyse/#.ULTEkYb9n2A";
-
-        shareService = $(this).val()
-        switch (shareService) {
-            case "facebook":
-                shareFacebookLike(url);
-                break;
-            case "twitter":
-                shareTwitter(url, text);
-                break;
-            case "email":
-                shareEmail(url, text);
-                break;
-            default:
-
-        }
-    });
-}
-
-function shareEmail(subject, body)
-{
-    window.location = "mailto:&subject=" + subject + "&body=" + body;
-}
-function shareTwitter(url, text)
-{
-    window.location = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text) + "&url=" + encodeURIComponent(url);
-}
-
-
