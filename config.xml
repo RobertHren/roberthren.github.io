@@ -44,10 +44,10 @@
     <!-- Core plugins -->
     
     <gap:plugin name="org.apache.cordova.device" />
-    
+    <gap:plugin name="de.appplant.cordova.plugin.email-composer" />
     <gap:plugin name="org.apache.cordova.device-orientation" />
     <gap:plugin name="org.apache.cordova.dialogs" />
-    
+    <gap:plugin name="nl.x-services.plugins.socialsharing" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
     <gap:plugin name="org.apache.cordova.media" />
     

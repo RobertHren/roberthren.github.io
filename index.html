@@ -216,6 +216,8 @@ exeperiance with us so we can improve in the future. Just click below to get sta
   </a>
         <div class="list card">
 
+<button onclick="window.plugins.socialsharing.share('Message only')">message only</button>
+<button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null /* img */, null /* url */, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via Facebook (with errcallback)</button>
 
 <a href="#/tab/share" onclick="var ref = window.open('http://facebook.com', '_blank', 'location=yes,toolbar=yes');" class="item item-icon-left item-icon-right">
     <i class="icon ion-social-facebook"></i>
