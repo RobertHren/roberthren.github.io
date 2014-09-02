@@ -111,4 +111,13 @@ function handleSocialShare()
     });
 }
 
+function shareEmail(subject, body)
+{
+    window.location = "mailto:&subject=" + subject + "&body=" + body;
+}
+function shareTwitter(url, text)
+{
+    window.location = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text) + "&url=" + encodeURIComponent(url);
+}
+
 
