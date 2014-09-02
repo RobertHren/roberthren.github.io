@@ -83,7 +83,7 @@ angular.module('ionicApp', ['ionic'])
     });
 
 
-  $urlRouterProvider.otherwise("/tab/home");
+  $urlRouterProvider.otherwise("/tab/jelovnik");
 
 })
 
