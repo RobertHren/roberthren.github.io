@@ -5,7 +5,6 @@ angular.module('ionicApp', ['ionic'])
   $stateProvider
     .state('tabs', {
       url: "/tab",
-      abstract: true,
       templateUrl: "tabs.html"
     })
     .state('tabs.home', {
