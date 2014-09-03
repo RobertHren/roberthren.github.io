@@ -29,6 +29,7 @@ font-size: 14px;
 }
 .tab-item {
 max-width: 100% !important;
+opacity: none !important;
 }
 .tab-item2 {
 background: rgb(255, 178, 40);
