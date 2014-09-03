@@ -6,4 +6,23 @@ overflow: hidden;
 text-overflow: ellipsis;
 white-space: normal;
 }
-
+.tabs {
+background-color: #ef4e3a;
+background-image: linear-gradient(0deg,#cc2311,#cc2311 50%,transparent 50%);
+color: #fff;
+height: 52px;
+border: none;
+}
+.tab-item .icon {
+display: block;
+margin: 0 auto;
+height: 36px;
+font-size: 36px;
+padding: 2px;
+}
+.tabs-icon-top>.tabs .tab-item {
+font-size: 14px;
+}
+.tab-item2 {
+background: rgb(255, 178, 40);
+}
