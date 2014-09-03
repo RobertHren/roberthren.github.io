@@ -22,24 +22,22 @@
  
 <body>
 
-<! ---header end -->
+<! ---header start -->
 
   <ion-nav-bar class="nav-title-slide-ios7 bar-assertive" >
     <div class="button-bar">
   <a href="#/tab/info" class="button icon ion-ios7-information-outline"></a>
   <a href="#/tab/review" class="button icon ion-chatbox-working"></a>
-  <a href="#/tab/share" class="button icon ion-paper-airplane"></a>
+  <a href="#/tab/share" class="button icon ion-paper-airplane button"></a>
 </div>
   </ion-nav-bar>
 
   <ion-nav-view animation="slide-left-right"></ion-nav-view>
 
+        <ion-nav-view  name="home-tab"></ion-nav-view>
+  
 
-
-      
-
-  </div>
-
+<! ---header end -->
 < !---bottom tab start --->
 
   <script id="tabs.html" type="text/ng-template">
@@ -52,9 +50,6 @@
 <ion-tab title="Naruèi Dostavu" icon="ion-ios7-telephone" href="#/tab/about">
         <ion-nav-view name="about-tab"></ion-nav-view>
       </ion-tab>
-
-
-
     </ion-tabs>
   </script>
 
@@ -69,7 +64,7 @@
        
   <a class="item item-icon-left">
     <i class="icon ion-clock"></i>
-    <h3><strong>Radno Vrijeme</strong></h3>
+    <h3><strong>Radno Vrijeme</strong></h3> 
       <h4>pon - ned: 09-23 h</h4>
       <h5>Za Novu godinu, Uskrs, Badnja, Božiæ i Staru godinu ne radimo.</h5>
   </a>
@@ -198,7 +193,7 @@ exeperiance with us so we can improve in the future. Just click below to get sta
   </a>
         <div class="list card">
 
-<a href="mailto:?subject=subject of the email&body=whatever body body" target="_blank" class="item item-icon-left item-icon-right">
+<a href="mailto:robert.skrlec@gmail.com" target="_blank" class="item item-icon-left item-icon-right">
     <i class="icon ion-android-mail"></i>
     <h3>Recite nam u èemu je problem.</h3>
   </a>
@@ -242,17 +237,12 @@ exeperiance with us so we can improve in the future. Just click below to get sta
     <i class="icon ion-paper-airplane"></i>
   </a>
 
-<a href="#/tab/share" onclick="var ref = window.open('mailto:&subject=Super%20Aplikacija&body=body%20of%20email%20http://vidimobi.com ', '_blank', 'location=yes,toolbar=yes');" class="item item-icon-left item-icon-right">
+<a href="mailto:?subject=aplikacija za dostavu pizze&body=Pogledaj ovu aplikaciju http://vidimobi.com" target="_blank" class="item item-icon-left item-icon-right">
     <i class="icon ion-android-mail"></i>
     <h4>Pošalji prijateljima putem E-maila</h4>
     <i class="icon ion-paper-airplane"></i>
   </a>
 
-<a href="gmap/index.html" class="item item-icon-left item-icon-right">
-    <i class="icon ion-android-mail"></i>
-    <h4>Gmap</h4>
-    <i class="icon ion-paper-airplane"></i>
-  </a>
 
        </div>
       </ion-content>
