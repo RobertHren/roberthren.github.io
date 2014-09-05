@@ -35,3 +35,6 @@ opacity: .99 !important;
 background: rgb(255, 178, 40);
 height: 100%;
 }
+.txtalign {
+text-align: center;
+}
