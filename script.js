@@ -72,6 +72,14 @@ angular.module('ionicApp', ['ionic'])
         }
       }
     })
+	.state('tabs.demo', {
+      url: "/demo",
+      views: {
+        'home-tab': {
+          templateUrl: "demo.html"
+        }
+      }
+    })
     .state('tabs.contact', {
       url: "/contact",
       views: {
