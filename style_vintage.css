@@ -1,0 +1,89 @@
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+@font-face {
+font-family: 'Marck Script';
+src: url(fonts/MarckScript-Regular.ttf) format('truetype');
+}
+.item h1 {
+color: #b68d4c;
+font-family: Marck Script !important;
+font-size: 28px !important;
+margin: 0 0 1px;
+}
+.item h2 {
+font-size: 13px !important;
+}
+.item h3 {
+font-size: 12px !important;
+}
+.item h7 {
+font-family: Arial !important;
+font-size: 18px !important;
+margin: 0 0 1px;
+}
+
+.item, .item h1, .item h2, .item h3, .item h4, .item h5, .item h6, .item h7, .item p, .item-content, .item-content h1, .item-content h2, .item-content h3, .item-content h4, .item-content h5, .item-content h6, .item-content p {
+text-overflow: ellipsis;
+white-space: normal;
+font-size: 15px;
+}
+.pane, .view {
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(100%,#e9e9ce));
+}
+.bar.bar-assertive {
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eab92d), color-stop(100%,#c79810)) !important;
+color: #fff;
+height: 50px;
+}
+.tabs {
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eab92d), color-stop(100%,#c79810))!important;
+color: #fff;
+height: 56px;
+border: none !important;
+}
+.item {
+background-color: rgba(255, 255, 255, 0);
+}
+.card {
+background-color: rgba(255, 255, 255, 0);
+box-shadow: none;
+}
+.padding {
+padding: 0px;
+}
+.divider2 {
+background: white;
+}
+
+
+
+.tab-item .icon {
+display: block;
+margin: 0 auto;
+height: 36px;
+font-size: 36px;
+padding: 2px;
+}
+.tabs-icon-top>.tabs .tab-item {
+font-size: 14px;
+margin: auto;
+}
+.tabs-icon-top>.tabs .tab-item {
+font-size: 14px;
+}
+.tab-item {
+max-width: 100% !important;
+opacity: .99 !important;
+}
+.tab-item2 {
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd65e), color-stop(100%,#febf04));
+height: 100%;
+}
+.tab-demo {
+background: rgb(209, 219, 224);
+}
+
+.txtalign {
+text-align: center;
+}

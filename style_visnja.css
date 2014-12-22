@@ -1,0 +1,107 @@
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+@font-face {
+font-family: 'Marck Script';
+src: url(fonts/MarckScript-Regular.ttf) format('truetype');
+}
+.item h1 {
+color: white;
+font-family: Marck Script !important;
+font-size: 26px !important;
+margin: 0 0 1px;
+}
+.item h2 {
+color: white;
+font-size: 14px !important;
+}
+.item h3 {
+color: white;
+font-size: 12px !important;
+}
+.item h4 {
+color: white;
+}
+.item h7 {
+font-family: Arial !important;
+font-size: 18px !important;
+margin: 0 0 1px;
+}
+.item h8 {
+color: white !important;
+padding: 10px;
+font-family: Arial !important;
+font-size: 18px !important;
+margin: 0 0 1px;
+}
+
+.item, .item h1, .item h2, .item h3, .item h4, .item h5, .item h6, .item h7, .item p, .item-content, .item-content h1, .item-content h2, .item-content h3, .item-content h4, .item-content h5, .item-content h6, .item-content p {
+text-overflow: ellipsis;
+white-space: normal;
+font-size: 15px;
+}
+.pane, .view {
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404));
+background-size: 100%;
+}
+.bar.bar-assertive {
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc0000), color-stop(100%,#cc0000)) !important;
+color: #fff;
+height: 50px;
+}
+
+.tabs {
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc0000), color-stop(100%,#cc0000))!important;
+color: #fff;
+height: 56px;
+border: none !important;
+}
+.item {
+background-color: rgba(255, 255, 255, 0);
+border-color: #D01010;
+}
+.card {
+background-color: rgba(255, 255, 255, 0);
+box-shadow: none;
+}
+.padding {
+padding: 0px;
+}
+.divider2 {
+background: white;
+}
+
+
+.item-icon-left .icon {
+left: 11px;
+color: white;
+}
+.tab-item .icon {
+display: block;
+margin: 0 auto;
+height: 36px;
+font-size: 36px;
+padding: 2px;
+}
+.tabs-icon-top>.tabs .tab-item {
+font-size: 14px;
+margin: auto;
+}
+.tabs-icon-top>.tabs .tab-item {
+font-size: 14px;
+}
+.tab-item {
+max-width: 100% !important;
+opacity: .99 !important;
+}
+.tab-item2 {
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffaf4b), color-stop(100%,#ff920a));
+height: 100%;
+}
+.tab-demo {
+background: rgb(209, 219, 224);
+}
+
+.txtalign {
+text-align: center;
+}
