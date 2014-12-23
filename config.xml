@@ -4,12 +4,12 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.pizza1.app"
-        version   = "1.0.1">
+        version   = "1.0.4">
 
     <name>Pizza App</name>
 
     <description>
-       Test verzija aplikacije za dostavu pizze...
+       Jelovnik Aplikacija (demo verzija)...
     </description>
 
     <author href="http://robertskrlec.com" email="robert.skrlec@gmail.com.com">
