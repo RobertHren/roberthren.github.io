@@ -6,7 +6,7 @@
         id        = "com.pizza1.app"
         version   = "1.0.5">
 
-    <name>JelovnikaApp</name>
+    <name>JelovnikApp</name>
 
     <description>
        Jelovnik Aplikacija (demo verzija)...
