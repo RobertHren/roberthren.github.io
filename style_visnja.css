@@ -1,6 +1,4 @@
-body {
-  cursor: url('http://ionicframework.com/img/finger.png'), auto;
-}
+
 @font-face {
 font-family: 'Marck Script';
 src: url(fonts/MarckScript-Regular.ttf) format('truetype');
@@ -38,7 +36,6 @@ margin: 0 0 1px;
 .item, .item h1, .item h2, .item h3, .item h4, .item h5, .item h6, .item h7, .item p, .item-content, .item-content h1, .item-content h2, .item-content h3, .item-content h4, .item-content h5, .item-content h6, .item-content p {
 text-overflow: ellipsis;
 white-space: normal;
-font-size: 15px;
 }
 .pane, .view {
 background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404));
@@ -51,7 +48,8 @@ height: 50px;
 }
 
 .tabs {
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc0000), color-stop(100%,#cc0000))!important;
+background: none !important;
+background-image: none !important;
 color: #fff;
 height: 56px;
 border: none !important;
@@ -70,8 +68,6 @@ padding: 0px;
 .divider2 {
 background: white;
 }
-
-
 .item-icon-left .icon {
 left: 11px;
 color: white;
@@ -87,6 +83,75 @@ padding: 2px;
 font-size: 14px;
 margin: auto;
 }
+.button .icon:before, .button.icon-left:before, .button.icon-right:before, .button.icon:before {
+display: block !important;
+line-height: 3px;
+font-size: 30px;
+}
+.icotab {
+width:50%;
+margin:1px;
+padding:14px;
+}
+.button {
+font-size: 14px;
+}
+.button.button-jelovnik {
+border-color: transparent;
+    background-color: #cc0000;
+    color: #fff; }
+    .button.button-jelovnik:hover {
+      color: #fff;
+      text-decoration: none; }
+    .button.button-jelovnik.active, .button.button-jelovnik.activated {
+      border-color: transparent;
+      background-color: #cc0000;
+      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+    .button.button-jelovnik.button-clear {
+      border-color: transparent;
+      background: none;
+      box-shadow: none;
+      color: #cc0000; }
+    .button.button-jelovnik.button-icon {
+      border-color: transparent;
+      background: none; }
+    .button.button-jelovnik.button-outline {
+      border-color: transparent;
+      background: transparent;
+      color: #cc0000; }
+      .button.button-jelovnik.button-outline.active, .button.button-jelovnik.button-outline.activated {
+        background-color: transparent;
+        box-shadow: none;
+        color: #fff; }
+
+ .button.button-call {
+    border-color: transparent;
+    background-color: #f0b840;
+    color: #fff; }
+    .button.button-call:hover {
+      color: #fff;
+      text-decoration: none; }
+    .button.button-call.active, .button.button-call.activated {
+      border-color: transparent;
+      background-color: #f0b840;
+      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+    .button.button-call.button-clear {
+      border-color: transparent;
+      background: none;
+      box-shadow: none;
+      color: #f0b840; }
+    .button.button-call.button-icon {
+      border-color: transparent;
+      background: none; }
+    .button.button-call.button-outline {
+      border-color: transparent;
+      background: transparent;
+      color: #f0b840; }
+      .button.button-call.button-outline.active, .button.button-call.button-outline.activated {
+        background-color: #f0b840;
+        box-shadow: none;
+        color: #fff; }
+
 .tabs-icon-top>.tabs .tab-item {
 font-size: 14px;
 }

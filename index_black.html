@@ -4,7 +4,7 @@
   <meta charset="windows-1250" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-  <title>Pizza App</title>
+  <title>JelovnikApp</title>
   <link href="css/ionic.min.css" rel="stylesheet">
   <link href="style_black.css" rel="stylesheet">
   <script type="text/javascript" src="cordova.js"></script>
@@ -39,16 +39,14 @@
 <! ---header end -->
 < !---footer tab start --->
 
+ 
   <script id="tabs.html" type="text/ng-template">
     <ion-tabs class="tabs-icon-top">
+<ion-tab ><ion-nav-view  name="home-tab"></ion-nav-view></ion-tab>
 
-<ion-tab  title="Jelovnik"  icon="ion-pizza" href="#/tab/jelovnik">
-        <ion-nav-view  name="home-tab"></ion-nav-view>
-      </ion-tab>
+<a href="#/tab/jelovnik" class="button icotab icon ion-pizza button-jelovnik">Jelovnik</a>
+<a href="tel:0922168727" class="button icotab icon ion-ios7-telephone button-call">Naruči Dostavu</a>
 
-<ion-tab class="tab-item2" title="Naruči Dostavu" icon="ion-ios7-telephone" href="#/tab/about">
-        <ion-nav-view name="about-tab"></ion-nav-view>
-      </ion-tab>
     </ion-tabs>
   </script>
 

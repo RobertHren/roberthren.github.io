@@ -1,14 +1,12 @@
-body {
-  cursor: url('http://ionicframework.com/img/finger.png'), auto;
-}
+
 .item, .item h1, .item h2, .item h3, .item h4, .item h5, .item h6, .item p, .item-content, .item-content h1, .item-content h2, .item-content h3, .item-content h4, .item-content h5, .item-content h6, .item-content p {
 overflow: hidden;
 text-overflow: ellipsis;
 white-space: normal;
 }
 .tabs {
-background: #ef4e3a !important;
-background-image: linear-gradient(0deg,#cc2311,#cc2311 50%,transparent 50%);
+background: none !important;
+background-image: none !important;
 color: #fff;
 height: 56px;
 border: none !important;
@@ -24,6 +22,76 @@ padding: 2px;
 font-size: 14px;
 margin: auto;
 }
+.button .icon:before, .button.icon-left:before, .button.icon-right:before, .button.icon:before {
+display: block !important;
+line-height: 3px;
+font-size: 30px;
+}
+.icotab {
+width:50%;
+margin:1px;
+padding:14px;
+}
+.button {
+font-size: 14px;
+}
+.button.button-jelovnik {
+border-color: transparent;
+    background-color: #ef4e3a;
+    color: #fff; }
+    .button.button-jelovnik:hover {
+      color: #fff;
+      text-decoration: none; }
+    .button.button-jelovnik.active, .button.button-jelovnik.activated {
+      border-color: transparent;
+      background-color: #ef4e3a;
+      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+    .button.button-jelovnik.button-clear {
+      border-color: transparent;
+      background: none;
+      box-shadow: none;
+      color: #ef4e3a; }
+    .button.button-jelovnik.button-icon {
+      border-color: transparent;
+      background: none; }
+    .button.button-jelovnik.button-outline {
+      border-color: transparent;
+      background: transparent;
+      color: #ef4e3a; }
+      .button.button-jelovnik.button-outline.active, .button.button-jelovnik.button-outline.activated {
+        background-color: transparent;
+        box-shadow: none;
+        color: #fff; }
+
+ .button.button-call {
+    border-color: transparent;
+    background-color: #f0b840;
+    color: #fff; }
+    .button.button-call:hover {
+      color: #fff;
+      text-decoration: none; }
+    .button.button-call.active, .button.button-call.activated {
+      border-color: transparent;
+      background-color: #f0b840;
+      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15); }
+    .button.button-call.button-clear {
+      border-color: transparent;
+      background: none;
+      box-shadow: none;
+      color: #f0b840; }
+    .button.button-call.button-icon {
+      border-color: transparent;
+      background: none; }
+    .button.button-call.button-outline {
+      border-color: transparent;
+      background: transparent;
+      color: #f0b840; }
+      .button.button-call.button-outline.active, .button.button-call.button-outline.activated {
+        background-color: #f0b840;
+        box-shadow: none;
+        color: #fff; }
+
+
 .tabs-icon-top>.tabs .tab-item {
 font-size: 14px;
 }
@@ -32,7 +100,7 @@ max-width: 100% !important;
 opacity: .99 !important;
 }
 .tab-item2 {
-background: rgb(255, 178, 40);
+background: rgb(255, 178, 40); 
 height: 100%;
 }
 .tab-demo {
