@@ -4,7 +4,7 @@
 
 <script language="javascript" type="text/javascript">
 
-var sound = ((new Audio()).canPlayType("audio/ogg; codecs=vorbis")==="") ? 'sound/call.wav' : 'sound/call.ogg';
+var sound = ((new Audio()).canPlayType("audio/mp3/ogg; codecs=vorbis")==="") ? 'sound/call.mp3' : 'sound/call.ogg';
 var snd = new Audio(sound); // buffers automatically when created
 function call() {
   snd.play();
@@ -22,10 +22,6 @@ function call() {
   <script src="js/ionic.bundle.min.js"></script>
   <script src="script.js"></script>
   <script src="js/plugins/SocialSharing.js"></script>
-
-  <feature name="SocialSharing">
-  <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
-  </feature>
 
 </head>
  
