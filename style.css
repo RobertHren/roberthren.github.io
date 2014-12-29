@@ -28,7 +28,6 @@ line-height: 3px;
 font-size: 30px;
 }
 .icotab {
-width:50%;
 margin:1px;
 padding:14px;
 }
@@ -38,7 +37,8 @@ font-size: 14px;
 .button.button-jelovnik {
 border-color: transparent;
     background-color: #ef4e3a;
-    color: #fff; }
+    color: #fff;
+    width: 50% !important;}
     .button.button-jelovnik:hover {
       color: #fff;
       text-decoration: none; }
