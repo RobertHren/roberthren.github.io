@@ -96,8 +96,7 @@ border-color: transparent;
 font-size: 14px;
 }
 .tab-item {
-max-width: 100% !important;
-opacity: .99 !important;
+display: none;
 }
 .tab-item2 {
 background: rgb(255, 178, 40); 
