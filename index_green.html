@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html ng-app="ionicApp">
 <head>
+
+<script language="javascript" type="text/javascript">
+var sound = ((new Audio()).canPlayType("audio/ogg; codecs=vorbis")==="") ? 'sound/call.wav' : 'sound/call.ogg';
+var snd = new Audio(sound); // buffers automatically when created
+function call() {
+  snd.play();
+}</script>
+
   <meta charset="windows-1250" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-  <title>JelovnikApp</title>
+  <title>Pizza App</title>
   <link href="css/ionic.min.css" rel="stylesheet">
   <link href="style_green.css" rel="stylesheet">
   <script type="text/javascript" src="cordova.js"></script>
@@ -39,19 +47,22 @@
 <! ---header end -->
 < !---footer tab start --->
 
-<script id="tabs.html" type="text/ng-template">
-    <ion-tabs class="tabs-icon-top">
+  <script id="tabs.html" type="text/ng-template">
+    <ion-tabs>
 <ion-tab ><ion-nav-view  name="home-tab"></ion-nav-view></ion-tab>
 
+<div class="button-bar">
 <a href="#/tab/jelovnik" class="button icotab icon ion-pizza button-jelovnik">Jelovnik</a>
-<a href="tel:0922168727" class="button icotab icon ion-ios7-telephone button-call">Naruči Dostavu</a>
+</div>  
+<div class="button-bar">
+<a href="tel:0922168727" onclick="call()" class="button icotab icon ion-ios7-telephone button-call">Naruči Dostavu</a>
+</div>
 
     </ion-tabs>
   </script>
 
 
-
-< !---bottom tab end --->
+< !---footer tab end --->
 < !---info start --->
 
   <script id="info.html" type="text/ng-template">
@@ -133,21 +144,8 @@
     <h3 style="margin: 0px 4px;"><strong>VIŠNJA</strong></h3>
       <h4 style="margin: 0px 4px;">Aktiviraj ovu boju</h4>
   </a>
+
        </div>
-
-<h5 style="text-align:center;">U nastavku možeš saznati više o aplikaciji i nazvati nas ako hoćeš unaprijediti poslovanje sa jelovnik aplikacijom</h5>
-
-<a href="" onclick="var ref = window.open('http://jelovnikapp.com', '_blank', 'location=yes,toolbar=yes');" class="item item-icon-left item-icon-right">
-    <i class="icon ion-ios7-help-outline"></i>
-    <h4>Pročitaj kakva je ovo aplikacija</h4>
-    <i class="icon ion-arrow-right-c"></i>
-  </a>
-
-<a href="tel:0922168727" class="item item-icon-left item-icon-right">
-    <i class="icon ion-ios7-telephone"></i>
-    <h4>Naruči Aplikaciju: 092/2168-727</h4>
-    <i class="icon ion-arrow-right-c"></i>
-  </a>
 
       </ion-content>
     </ion-view>
@@ -314,6 +312,33 @@ uslugu u budućnosti. Samo klikni ispod za početak..</h4>
   
 
 < !---share end --->
+< !---call button start --->
+
+  <script id="about.html" type="text/ng-template">
+    <ion-view>
+      <ion-content class="padding">
+        <h4 style="text-align:center;"<strong>Ovo je DEMO verzija jelovnik aplikacije.</strong></h4>
+        <h5 style="text-align:center;">U finalnoj verziji, kada korisnik klikne na "Naruči dostavu", tebi će zazvoniti telefon.</h5>
+        <h5 style="text-align:center;">U nastavku možeš saznati više o aplikaciji i nazvati nas ako hoćeš unaprijediti poslovanje sa jelovnik aplikacijom</h5>
+
+
+<a href="#/tab/about" onclick="var ref = window.open('http://jelovnikapp.com', '_blank', 'location=yes,toolbar=yes');" class="item item-icon-left item-icon-right">
+    <i class="icon ion-ios7-help-outline"></i>
+    <h4>Pročitaj kakva je ovo aplikacija</h4>
+    <i class="icon ion-arrow-right-c"></i>
+  </a>
+
+<a href="tel:0922168727" class="item item-icon-left item-icon-right">
+    <i class="icon ion-ios7-telephone"></i>
+    <h4>Naruči Aplikaciju: 092/2168-727</h4>
+    <i class="icon ion-arrow-right-c"></i>
+  </a>
+
+      </ion-content>
+    </ion-view>
+  </script>
+
+< !---call button end --->
 < !---home start --->
 
   <script style="" id="home.html" type="text/ng-template">

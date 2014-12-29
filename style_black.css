@@ -1,8 +1,4 @@
 
-@font-face {
-font-family: 'Marck Script';
-src: url(fonts/MarckScript-Regular.ttf) format('truetype');
-}
 .item h1 {
 color: orange;
 font-family: Marck Script !important;
@@ -134,6 +130,16 @@ color: #fff; }
         box-shadow: none;
         color: #fff; }
 
+.tab-item {
+display: none;
+}
+
+.ion-ios7-telephone {
+padding-top: 13px !important;
+}
+.ion-pizza {
+padding-top: 13px !important;
+}
 
 .tabs-icon-top>.tabs .tab-item {
 font-size: 14px;

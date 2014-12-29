@@ -12,6 +12,7 @@
  *
  */
 
+
 (function() {
 
 // Create global ionic obj and its namespaces

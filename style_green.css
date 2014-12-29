@@ -1,4 +1,6 @@
-
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
 @font-face {
 font-family: 'Marck Script';
 src: url(fonts/MarckScript-Regular.ttf) format('truetype');
@@ -24,6 +26,7 @@ margin: 0 0 1px;
 .item, .item h1, .item h2, .item h3, .item h4, .item h5, .item h6, .item h7, .item p, .item-content, .item-content h1, .item-content h2, .item-content h3, .item-content h4, .item-content h5, .item-content h6, .item-content p {
 text-overflow: ellipsis;
 white-space: normal;
+font-size: 15px;
 }
 .pane, .view {
 background: url("img_bg/white.jpg");
@@ -41,9 +44,6 @@ color: #fff;
 height: 56px;
 border: none !important;
 }
-.button:hover {
-color: rgba(255, 255, 255, 1);
-}
 .item {
 background-color: rgba(255, 255, 255, 0);
 }
@@ -57,6 +57,7 @@ padding: 0px;
 .divider2 {
 background: white;
 }
+
 .button .icon:before, .button.icon-left:before, .button.icon-right:before, .button.icon:before {
 display: block !important;
 line-height: 3px;
@@ -126,28 +127,20 @@ color: #fff; }
         box-shadow: none;
         color: #fff; }
 
-
-
-.tab-item .icon {
-display: block;
-margin: 0 auto;
-height: 36px;
-font-size: 36px;
-padding: 2px;
+.tab-item {
+display: none;
 }
+
+.ion-ios7-telephone {
+padding-top: 13px !important;
+}
+.ion-pizza {
+padding-top: 13px !important;
+}
+
 .tabs-icon-top>.tabs .tab-item {
 font-size: 14px;
 margin: auto;
-}
-.button .icon:before, .button.icon-left:before, .button.icon-right:before, .button.icon:before {
-display: block !important;
-line-height: 3px;
-font-size: 30px;
-}
-.icotab {
-width:50%;
-margin:1px;
-padding:14px;
 }
 .tabs-icon-top>.tabs .tab-item {
 font-size: 14px;
@@ -155,6 +148,10 @@ font-size: 14px;
 .tab-item {
 max-width: 100% !important;
 opacity: .99 !important;
+}
+.tab-item2 {
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffaf4b), color-stop(100%,#ff920a));
+height: 100%;
 }
 .tab-demo {
 background: rgb(209, 219, 224);
