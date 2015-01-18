@@ -2,16 +2,21 @@
 <html ng-app="ionicApp">
 <head>
 
+
   <meta charset="windows-1250" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-  <title>JelovnikApp</title>
+  <title>Pizza App</title>
   <link href="css/ionic.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="style_green.css" rel="stylesheet">
   <script type="text/javascript" src="cordova.js"></script>
   <script src="js/ionic.bundle.min.js"></script>
   <script src="script.js"></script>
   <script src="js/plugins/SocialSharing.js"></script>
+
+  <feature name="SocialSharing">
+  <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+  </feature>
 
 </head>
  
@@ -26,6 +31,7 @@
   <a href="#/tab/review" class="button icon button-clear ion-chatbox-working"></a>
   <a href="#/tab/share" class="button icon button-clear ion-paper-airplane button"></a>
   <a href="#/tab/demo" class="button icon button-clear ion-settings"></a>
+
 </div>
   </ion-nav-bar>
 
@@ -50,18 +56,19 @@
   </script>
 
 
-< !---bottom tab end --->
+< !---footer tab end --->
 < !---info start --->
 
   <script id="info.html" type="text/ng-template">
     <ion-view class="padding">
       <ion-content>
        
+
   <a class="item item-icon-left">
     <i class="icon ion-clock"></i>
     <h3><strong>Radno Vrijeme</strong></h3> 
       <h4>pon - ned: 09-23 h</h4>
-      <h5>Za Novu godinu, Uskrs, Badnjak, Božić i Staru godinu ne radimo.</h5>
+      <h3>Za Novu godinu, Uskrs, Badnjak, Božić i Staru godinu ne radimo.</h3>
   </a>
      
   <a class="item item-icon-left">
@@ -74,7 +81,7 @@
     <i class="icon ion-clipboard"></i>
     <h3><strong>Rezervacije</strong></h3>
       <h4>TEL: 01/123-456</h4>
-      <h5>Rezervacije stola primamo za minimalno 8 osoba. Molimo da nazovete najmanje dan ranije za rezervaciju.</h5>
+      <h3>Rezervacije stola primamo za minimalno 8 osoba. Molimo da nazovete najmanje dan ranije za rezervaciju.</h3>
   </a>
 
   <a class="item item-icon-left">
@@ -100,19 +107,19 @@
   </a>
         <div class="list card">
 
-  <a class="item item-icon-left item-icon-right"href="index.html">
+  <a class="item item-icon-left item-icon-right"href="index_redhot.html">
     <i class="icon ion-ios7-refresh" style="background:red; color: #fff; padding: 0px 4px"></i>
-      <h3 style="margin: 0px 4px;"><strong>RED HOT</strong></h3>
+      <h3 style="margin: 0px 4px;"><strong>RED</strong></h3>
       <h4 style="margin: 0px 4px;">Aktiviraj ovu boju</h4>
   </a>
   
 
-<a class="item item-icon-left item-icon-right" href="index_green.html">
+<a class="item item-icon-left item-icon-right" href="index.html">
   <i class="icon ion-ios7-refresh" style="background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9db80), color-stop(100%,#96c56f)) !important; color: #fff; padding: 0px 4px;"></i>
     <h3 style="margin: 0px 4px;"><strong>ZELENO</strong></h3>
       <h4 style="margin: 0px 4px;">Aktiviraj ovu boju</h4>
   </a>
- 
+  
   
   <a class="item item-icon-left item-icon-right" href="index_vintage.html">
   <i class="icon ion-ios7-refresh" style="background: -webkit-linear-gradient(top, #eab92d 0%,#c79810 100%) !important; color: #fff; padding: 0px 4px;"></i>
@@ -131,29 +138,14 @@
     <h3 style="margin: 0px 4px;"><strong>VIŠNJA</strong></h3>
       <h4 style="margin: 0px 4px;">Aktiviraj ovu boju</h4>
   </a>
+
        </div>
-
-
-<h5 style="text-align:center;">U nastavku možeš saznati više o aplikaciji i nazvati nas ako hoćeš unaprijediti poslovanje sa jelovnik aplikacijom</h5>
-
-<a href="" onclick="var ref = window.open('http://jelovnikapp.com', '_blank', 'location=yes,toolbar=yes');" class="item item-icon-left item-icon-right">
-    <i class="icon ion-ios7-help-outline"></i>
-    <h4>Pročitaj kakva je ovo aplikacija</h4>
-    <i class="icon ion-arrow-right-c"></i>
-  </a>
-
-<a href="tel:0922168727" class="item item-icon-left item-icon-right">
-    <i class="icon ion-ios7-telephone"></i>
-    <h4>Naruči Aplikaciju: 092/2168-727</h4>
-    <i class="icon ion-arrow-right-c"></i>
-  </a>
 
       </ion-content>
     </ion-view>
   </script>
 
 < !---DEMO end --->
-
 < !---review start --->
 
   <script id="review.html" type="text/ng-template">
@@ -183,6 +175,7 @@ Molimo odvojite trenutak i podijelite Vaše iskustvo.</h4>
   </a>
 
        </div>
+
       </ion-content>
     </ion-view>
   </script>
@@ -254,6 +247,11 @@ uslugu u budućnosti. Samo klikni ispod za početak..</h4>
   </a>
 
        </div>
+<a class="item item-icon-left tab-demo">
+    <i class="icon ion-ios7-help-outline" ></i>
+    <h4><strong>Ovo je TEST verzija aplikacije.</strong></h4>
+      <h4>U finalnoj verziji korisnik odavde može direktno Vama putem emaila poslati kritiku.</h4>
+  </a>
       </ion-content>
     </ion-view>
   </script>
@@ -300,18 +298,46 @@ uslugu u budućnosti. Samo klikni ispod za početak..</h4>
 
 
        </div>
+
       </ion-content>
     </ion-view>
   </script>
   
 
 < !---share end --->
+< !---call button start --->
+
+  <script id="about.html" type="text/ng-template">
+    <ion-view>
+      <ion-content class="padding">
+        <h4 style="text-align:center;"<strong>Ovo je DEMO verzija jelovnik aplikacije.</strong></h4>
+        <h5 style="text-align:center;">U finalnoj verziji, kada korisnik klikne na "Naruči dostavu", tebi će zazvoniti telefon.</h5>
+        <h5 style="text-align:center;">U nastavku možeš saznati više o aplikaciji i nazvati nas ako hoćeš unaprijediti poslovanje sa jelovnik aplikacijom</h5>
+
+
+<a href="#/tab/about" onclick="var ref = window.open('http://jelovnikapp.com', '_blank', 'location=yes,toolbar=yes');" class="item item-icon-left item-icon-right">
+    <i class="icon ion-ios7-help-outline"></i>
+    <h4>Pročitaj kakva je ovo aplikacija</h4>
+    <i class="icon ion-arrow-right-c"></i>
+  </a>
+
+<a href="tel:0922168727" class="item item-icon-left item-icon-right">
+    <i class="icon ion-ios7-telephone"></i>
+    <h4>Naruči Aplikaciju: 092/2168-727</h4>
+    <i class="icon ion-arrow-right-c"></i>
+  </a>
+
+      </ion-content>
+    </ion-view>
+  </script>
+
+< !---call button end --->
 < !---home start --->
 
   <script style="" id="home.html" type="text/ng-template">
     <ion-view>
       <ion-content class="padding">
-        <h3>Ovo je DEMO verzija aplikacije.</h3>
+        <h3>Ovo je TEST verzija aplikacije.</h3>
         <p>U konačnoj verziji, kada kupac klikne na "Naruči dostavu", Vama će zazvoniti telefon.</p>
         </br>
 
@@ -328,168 +354,168 @@ uslugu u budućnosti. Samo klikni ispod za početak..</h4>
         
 <div class="list">
 
-<div class="item item-divider">
-      <h2><strong>Pizze</strong></h2>
+<div class="item item-divider divider2">
+      <h7>Pizze</h7>
 </div>
 
     <div class="item">
-      <h2><strong>Vesuvio</strong></h2>
-      <h4><strong>(rajčica, sir, šunka)</strong></h4>
-      <h4>Mala:38kn, Velika:48kn, Jumbo:86kn</h4>
+      <h1>Vesuvio</h1>
+      <h2>(rajčica, sir, šunka)</h2>
+      <h3>Mala:38kn, Velika:48kn, Jumbo:86kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Fungi</strong></h2>
-      <h4><strong>(rajčica, sir, šampinjoni)</strong></h4>
-      <h4>Mala:38kn, Velika:48kn, Jumbo:86kn</h4>
+      <h1>Fungi</h1>
+      <h2>(rajčica, sir, šampinjoni)</h2>
+      <h3>Mala:38kn, Velika:48kn, Jumbo:86kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Capricosa</strong></h2>
-      <h4><strong>(rajčica, sir, šunka, šampinjoni)</strong></h4>
-      <h4>Mala:38kn, Velika:48kn, Jumbo:86kn</h4>
+      <h1>Capricosa</strong></h1>
+      <h2>(rajčica, sir, šunka, šampinjoni)</h2>
+      <h3>Mala:38kn, Velika:48kn, Jumbo:86kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Margerita</strong></h2>
-      <h4><strong>(rajčica, sir)</strong></h4>
-      <h4>Mala:36kn, Velika:46kn, Jumbo:82kn</h4>
+      <h1>Margerita</h1>
+      <h2>(rajčica, sir)</h2>
+      <h3>Mala:36kn, Velika:46kn, Jumbo:82kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Tropicana</strong></h2>
-      <h4><strong>(rajčica, ananas)</strong></h4>
-      <h4>Mala:36kn, Velika:46kn, Jumbo:82kn</h4>
+      <h1>Tropicana</strong></h2>
+      <h2>(rajčica, ananas)</strong></h4>
+      <h3>Mala:36kn, Velika:46kn, Jumbo:82kn</h4>
     </div>
 
     <div class="item">
-      <h2><strong>Picante</strong></h2>
-      <h4><strong>(rajčica, sir, šunka, špek, feferoni ljuti i blagi)</strong></h4>
-      <h4>Mala:40kn, Velika:50kn, Jumbo:90kn</h4>
+      <h1>Picante</strong></h1>
+      <h2>(rajčica, sir, šunka, špek, feferoni ljuti i blagi)</h2>
+      <h3>Mala:40kn, Velika:50kn, Jumbo:90kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Quatro Stagioni</strong></h2>
-      <h4><strong>(1/4 margerita, 1/4 capricosa, 1/4 vesuvio, 1/4 plodovi mora)</strong></h4>
-      <h4>Mala:40kn, Velika:50kn, Jumbo:90kn</h4>
+      <h1>Quatro Stagioni</h1>
+      <h2>(1/4 margerita, 1/4 capricosa, 1/4 vesuvio, 1/4 plodovi mora)</h2>
+      <h3>Mala:40kn, Velika:50kn, Jumbo:90kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Calzone - štruca</strong></h2>
-      <h4><strong>(rajčica, sir, šunka)</strong></h4>
-      <h4>Mala:38kn, Velika:48kn, Jumbo:86kn</h4>
+      <h1>Calzone - štruca</h1>
+      <h2>(rajčica, sir, šunka)</h2>
+      <h3>Mala:38kn, Velika:48kn, Jumbo:86kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Quatro Formaggi</strong></h2>
-      <h4><strong>(rajčica, 4 vrste sira - gorgonzola, mzzarela, gaudela, tehla)</strong></h4>
-      <h4>Mala:42kn, Velika:52kn, Jumbo:94kn</h4>
+      <h1>Quatro Formaggi</h1>
+      <h2>(rajčica, 4 vrste sira - gorgonzola, mzzarela, gaudela, tehla)</h2>
+      <h3>Mala:42kn, Velika:52kn, Jumbo:94kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Urnebes</strong></h2>
-      <h4><strong>(rajčica, sir, čili, salama, šunka, češnjak)</strong></h4>
-      <h4>Mala:40kn, Velika:50kn, Jumbo:90kn</h4>
+      <h1>Urnebes</h1>
+      <h2>(rajčica, sir, čili, salama, šunka, češnjak)</h2>
+      <h3>Mala:40kn, Velika:50kn, Jumbo:90kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Plodovi Mora</strong></h2>
-      <h4><strong>(rajčica, sir, plodovi mora)</strong></h4>
-      <h4>Mala:40kn, Velika:50kn, Jumbo:90kn</h4>
+      <h1>Plodovi Mora</h1>
+      <h2>(rajčica, sir, plodovi mora)</h2>
+      <h3>Mala:40kn, Velika:50kn, Jumbo:90kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Zagorska</strong></h2>
-      <h4><strong>(rajčica, sir, salama, špek, vrhnje)</strong></h4>
-      <h4>Mala:40kn, Velika:50kn, Jumbo:90kn</h4>
+      <h1>Zagorska</h1>
+      <h2>(rajčica, sir, salama, špek, vrhnje)</h2>
+      <h3>Mala:40kn, Velika:50kn, Jumbo:90kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Lovačka</strong></h2>
-      <h4><strong>(rajčica, sir, lovačka kobasica, blagi feferoni, crveni luk)</strong></h4>
-      <h4>Mala:40kn, Velika:50kn, Jumbo:90kn</h4>
+      <h1>Lovačka</h1>
+      <h2>(rajčica, sir, lovačka kobasica, blagi feferoni, crveni luk)</h2>
+      <h3>Mala:40kn, Velika:50kn, Jumbo:90kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Sexy</strong></h2>
-      <h4><strong>(rajčica, sir, šunka, šampinjoni, 2 jaja, hrenovka)</strong></h4>
-      <h4>Mala:42kn, Velika:52kn, Jumbo:94kn</h4>
+      <h1>Sexy</h1>
+      <h2>(rajčica, sir, šunka, šampinjoni, 2 jaja, hrenovka)</h2>
+      <h3>Mala:42kn, Velika:52kn, Jumbo:94kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Mexico</strong></h2>
-      <h4><strong>(rajčica, sir, šunka, grah, špek, paprika)</strong></h4>
-      <h4>Mala:40kn, Velika:50kn, Jumbo:90kn</h4>
+      <h1>Mexico</h1>
+      <h2>(rajčica, sir, šunka, grah, špek, paprika)</h2>
+      <h3>Mala:40kn, Velika:50kn, Jumbo:90kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Vegetariana</strong></h2>
-      <h4><strong>(rajčica, sir, kukuruz, grašak, paprika)</strong></h4>
-      <h4>Mala:38kn, Velika:48kn, Jumbo:86kn</h4>
+      <h1>Vegetariana</h1>
+      <h2>(rajčica, sir, kukuruz, grašak, paprika)</h2>
+      <h3>Mala:38kn, Velika:48kn, Jumbo:86kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Dalmatina</strong></h2>
-      <h4><strong>(rajčica, sir, slane srdelice)</strong></h4>
-      <h4>Mala:38kn, Velika:48kn, Jumbo:86kn</h4>
+      <h1>Dalmatina</h1>
+      <h2>(rajčica, sir, slane srdelice)</h2>
+      <h3>Mala:38kn, Velika:48kn, Jumbo:86kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Tuna</strong></h2>
-      <h4><strong>(rajčica, sir, tuna)</strong></h4>
-      <h4>Mala:38kn, Velika:48kn, Jumbo:86kn</h4>
+      <h1>Tuna</h1>
+      <h2>(rajčica, sir, tuna)</h2>
+      <h3>Mala:38kn, Velika:48kn, Jumbo:86kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Slavonska</strong></h2>
-      <h4><strong>(rajčica, sir, kulen, vratina, feferoni)</strong></h4>
-      <h4>Mala:42kn, Velika:52kn, Jumbo:94kn</h4>
+      <h1>Slavonska</h1>
+      <h2>(rajčica, sir, kulen, vratina, feferoni)</h2>
+      <h3>Mala:42kn, Velika:52kn, Jumbo:94kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Pizza sa mljevenim mesom </strong></h2>
-      <h4><strong>(sos, sir, meso, rikula)</strong></h4>
-      <h4>Mala:42kn, Velika:52kn, Jumbo:94kn</h4>
+      <h1>Pizza sa mljevenim mesom </h1>
+      <h2>(sos, sir, meso, rikula)</h2>
+      <h3>Mala:42kn, Velika:52kn, Jumbo:94kn</h3>
     </div>
 
-<div class="item item-divider">
-      <h2><strong>Ostala jela</strong></h2>
+<div class="item item-divider divider2">
+      <h7>Ostala jela</h7>
 </div>
 
     <div class="item">
-      <h2><strong>Pečeno tijesto</strong></h2>
-      <h4><strong>(sos, sir, meso, rikula)</strong></h4>
-      <h4>Malo:12kn, Veliko:16kn</h4>
+      <h1>Pečeno tijesto</h1>
+      <h2>(sos, sir, meso, rikula)</h2>
+      <h3>Malo:12kn, Veliko:16kn</h3>
     </div>
 
     <div class="item">
-      <h2><strong>Lazanje </strong></h2>
-      <h4><strong>(meso ili sa povrćem)</strong></h4>
-      <h4>Mala porcija:42kn, Velika porcija:52kn</h4>
+      <h1>Lazanje </h1>
+      <h2>(meso ili sa povrćem)</h2>
+      <h3>Mala porcija:42kn, Velika porcija:52kn</h3>
     </div>
 
-    <div class="item item-divider">
-      <h2><strong>Dodaci na pizzu</strong></h2>
+    <div class="item item-divider divider2">
+      <h7>Dodaci na pizzu</h7>
 </div>
 
     <div class="item">
-      <h4><strong>umak od rajčice, masline, vrhnje, šunka, šampinjoni, salama, kukuruz</strong></h4>
-      <h4>8,00kn</h4>
+      <h2>umak od rajčice, masline, vrhnje, šunka, šampinjoni, salama, kukuruz</h2>
+      <h3>8,00kn</h3>
     </div>
 
     <div class="item">
-      <h4><strong>hrenovka, feferoni (ljuti ili blagi), luk (crveni ili bijeli), paprika, špek, sir, mozzarella, tuna </strong></h4>
-      <h4>10,00kn</h4>
+      <h2>hrenovka, feferoni (ljuti ili blagi), luk (crveni ili bijeli), paprika, špek, sir, mozzarella, tuna </h2>
+      <h3>10,00kn</h3>
     </div>
 
     <div class="item">
-      <h4><strong>plodovi mora, kulen, gorgonzola, vratina </strong></h4>
-      <h4>16,00kn</h4>
+      <h2>plodovi mora, kulen, gorgonzola, vratina</h2>
+      <h3>16,00kn</h3>
     </div>
 
     <div class="item">
-      <h4><strong>jaje (kom.)</strong></h4>
-      <h4>6,00kn</h4>
+      <h2>jaje (kom.)</h2>
+      <h3>6,00kn</h3>
     </div>
 
     
@@ -505,4 +531,3 @@ uslugu u budućnosti. Samo klikni ispod za početak..</h4>
 
 </body>
 </html>
-

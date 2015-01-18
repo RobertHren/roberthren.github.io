@@ -22,7 +22,6 @@ white-space: normal;
 }
 .pane, .view {
 background: url("img_bg/white.jpg");
-background-size: 100%;
 }
 .bar.bar-assertive {
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e));
